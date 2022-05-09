@@ -1,0 +1,10 @@
+extends ./layout/index
+block contenido
+    h1(class="mt-5 text-center")=pagina
+    main.container.mt-5
+        .wrap
+        .search
+            input.searchTerm(type='text' placeholder='What are you looking for?')
+            button.searchButton
+                i.fa.fa-search(type='submit')
+        include ./layout/bloque_viajes

@@ -1,0 +1,30 @@
+extends ./layout/index
+block slider
+    .slider     
+        h1  Rio de Janeiro 
+        em aventura
+block contenido
+    main.container.mt-5
+        
+        h2.text-center.mb-5 Sobre Nostros
+        .row.mb-5   
+            .col-md-6 
+                p NexTop es una agencia de viajes con mas de 14 años de trayectoria en el mercado, caracterizada por el buen servicio y oferta de productos turísticos de calidad en destinos nacionales e internacionales, trabajando con un equipo de más de 60 personas comprometido con cumplir los sueños de viaje de nuestros clientes. Coordinamos todos los servicios de un paquete turístico, como tiquetes aéreos, alojamiento, alimentación, traslados, tours, asistencias médicas, alquiler de autos, cruceros. entre otros. Igualmente gestionamos todos los servicios de viajes corporativos, convenciones, viajes de incentivos y eventos.
+                p Colreservas se compromete a mantener la confiabilidad, accesibilidad en el servicio, la calidad de sus productos, la investigación en nuevas tecnologías y el crecimiento. Igualmente a desarrollar la capacidad de satisfacer al cliente, procesos eficaces, la gestión de sistemas y financiera, las alianzas con proveedores, a promover la realización personal y profesional del recurso humano, los valores organizacionales y programas sociales. Así como a mejorar el posicionamiento de marca. Además es una empresa comprometida con la implementación y mantenimiento del sistema de seguridad y salud en el trabajo.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container 
+            .row
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje Canada 
+                        p.fecha 20 de marzo de 2022- 28 de marzo de 2022
+                        p.precio $2500 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
